@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63EA6F9E27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA6F9D27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift */; };
+		63EA6F9F27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA6F9D27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift */; };
+		63EA6FC42703E1E3008C48D7 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA6FC32703E1E3008C48D7 /* Globals.swift */; };
+		63EA6FC52703E1E3008C48D7 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA6FC32703E1E3008C48D7 /* Globals.swift */; };
+		63FBDF4126FE7D7600264903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF4026FE7D7600264903 /* AppDelegate.swift */; };
+		63FBDF4326FE7D7600264903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF4226FE7D7600264903 /* SceneDelegate.swift */; };
+		63FBDF4526FE7D7600264903 /* ThingRootCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF4426FE7D7600264903 /* ThingRootCollectionViewController.swift */; };
+		63FBDF4826FE7D7600264903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FBDF4626FE7D7600264903 /* Main.storyboard */; };
+		63FBDF4B26FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF4926FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodeld */; };
+		63FBDF4D26FE7D7800264903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FBDF4C26FE7D7800264903 /* Assets.xcassets */; };
+		63FBDF5026FE7D7800264903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FBDF4E26FE7D7800264903 /* LaunchScreen.storyboard */; };
+		63FBDF5A26FE7E2900264903 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FBDF5926FE7E2900264903 /* CloudKit.framework */; };
+		63FBDF5D26FE7F2800264903 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF5C26FE7F2800264903 /* CoreDataStack.swift */; };
+		63FBDF5F26FE7F4900264903 /* CoreDataUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF5E26FE7F4900264903 /* CoreDataUtilities.swift */; };
+		63FBDF6126FE82AC00264903 /* CoreDataDistributedUpdateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF6026FE82AC00264903 /* CoreDataDistributedUpdateListener.swift */; };
+		63FBDF6426FE873F00264903 /* Thing+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF6326FE873F00264903 /* Thing+Extras.swift */; };
+		63FBDF6726FE927C00264903 /* ThingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF6626FE927C00264903 /* ThingCollectionViewCell.swift */; };
+		63FBDF6926FE965100264903 /* ThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF6826FE965100264903 /* ThingView.swift */; };
+		63FBDF83270242B000264903 /* ThingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF82270242B000264903 /* ThingViewController.swift */; };
+		63FBDF8B2702636800264903 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FBDF8A2702636800264903 /* Messages.framework */; };
+		63FBDF8E2702636800264903 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF8D2702636800264903 /* MessagesViewController.swift */; };
+		63FBDF912702636800264903 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63FBDF8F2702636800264903 /* MainInterface.storyboard */; };
+		63FBDF932702636900264903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FBDF922702636900264903 /* Assets.xcassets */; };
+		63FBDF972702636A00264903 /* iMessageApp.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63FBDF892702636800264903 /* iMessageApp.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63FBDF9D2702638100264903 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FBDF5926FE7E2900264903 /* CloudKit.framework */; };
+		63FBDF9E2702640300264903 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF5C26FE7F2800264903 /* CoreDataStack.swift */; };
+		63FBDF9F2702640300264903 /* CoreDataUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF5E26FE7F4900264903 /* CoreDataUtilities.swift */; };
+		63FBDFA02702640300264903 /* CoreDataDistributedUpdateListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF6026FE82AC00264903 /* CoreDataDistributedUpdateListener.swift */; };
+		63FBDFA12702640700264903 /* Thing+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF6326FE873F00264903 /* Thing+Extras.swift */; };
+		63FBDFA22702640D00264903 /* iCloudCoreDataStarter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDF4926FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodeld */; };
+		63FBDFA42702702100264903 /* iMsgThingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FBDFA32702702100264903 /* iMsgThingTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63FBDF952702636A00264903 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63FBDF3526FE7D7600264903 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63FBDF882702636800264903;
+			remoteInfo = iMessageApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63FBDF9B2702636A00264903 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63FBDF972702636A00264903 /* iMessageApp.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63EA6F9D27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDiffableFetchedResultsHandler.swift; sourceTree = "<group>"; };
+		63EA6FC32703E1E3008C48D7 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		63FBDF3D26FE7D7600264903 /* iCloudCoreDataStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCloudCoreDataStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FBDF4026FE7D7600264903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63FBDF4226FE7D7600264903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63FBDF4426FE7D7600264903 /* ThingRootCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingRootCollectionViewController.swift; sourceTree = "<group>"; };
+		63FBDF4726FE7D7600264903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63FBDF4A26FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iCloudCoreDataStarter.xcdatamodel; sourceTree = "<group>"; };
+		63FBDF4C26FE7D7800264903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63FBDF4F26FE7D7800264903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63FBDF5126FE7D7800264903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FBDF5726FE7E2400264903 /* iCloudCoreDataStarter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCloudCoreDataStarter.entitlements; sourceTree = "<group>"; };
+		63FBDF5926FE7E2900264903 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		63FBDF5C26FE7F2800264903 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		63FBDF5E26FE7F4900264903 /* CoreDataUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUtilities.swift; sourceTree = "<group>"; };
+		63FBDF6026FE82AC00264903 /* CoreDataDistributedUpdateListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDistributedUpdateListener.swift; sourceTree = "<group>"; };
+		63FBDF6326FE873F00264903 /* Thing+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thing+Extras.swift"; sourceTree = "<group>"; };
+		63FBDF6626FE927C00264903 /* ThingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingCollectionViewCell.swift; sourceTree = "<group>"; };
+		63FBDF6826FE965100264903 /* ThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingView.swift; sourceTree = "<group>"; };
+		63FBDF82270242B000264903 /* ThingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingViewController.swift; sourceTree = "<group>"; };
+		63FBDF892702636800264903 /* iMessageApp.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iMessageApp.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FBDF8A2702636800264903 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		63FBDF8D2702636800264903 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		63FBDF902702636800264903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		63FBDF922702636900264903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63FBDF942702636900264903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63FBDF9C2702637800264903 /* iMessageApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMessageApp.entitlements; sourceTree = "<group>"; };
+		63FBDFA32702702100264903 /* iMsgThingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMsgThingTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63FBDF3A26FE7D7600264903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FBDF5A26FE7E2900264903 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FBDF862702636800264903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FBDF8B2702636800264903 /* Messages.framework in Frameworks */,
+				63FBDF9D2702638100264903 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63FBDF3426FE7D7600264903 = {
+			isa = PBXGroup;
+			children = (
+				63FBDF3F26FE7D7600264903 /* iCloudCoreDataStarter */,
+				63FBDF8C2702636800264903 /* iMessageApp */,
+				63FBDF3E26FE7D7600264903 /* Products */,
+				63FBDF5826FE7E2900264903 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63FBDF3E26FE7D7600264903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF3D26FE7D7600264903 /* iCloudCoreDataStarter.app */,
+				63FBDF892702636800264903 /* iMessageApp.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63FBDF3F26FE7D7600264903 /* iCloudCoreDataStarter */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF5B26FE7F0A00264903 /* CoreDataStack */,
+				63FBDF6226FE871500264903 /* Model */,
+				63FBDF84270242B700264903 /* ViewControllers */,
+				63FBDF6526FE926900264903 /* Views */,
+				63FBDF5726FE7E2400264903 /* iCloudCoreDataStarter.entitlements */,
+				63EA6FC32703E1E3008C48D7 /* Globals.swift */,
+				63FBDF4026FE7D7600264903 /* AppDelegate.swift */,
+				63FBDF4226FE7D7600264903 /* SceneDelegate.swift */,
+				63FBDF4626FE7D7600264903 /* Main.storyboard */,
+				63FBDF4C26FE7D7800264903 /* Assets.xcassets */,
+				63FBDF4E26FE7D7800264903 /* LaunchScreen.storyboard */,
+				63FBDF5126FE7D7800264903 /* Info.plist */,
+				63FBDF4926FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodeld */,
+			);
+			path = iCloudCoreDataStarter;
+			sourceTree = "<group>";
+		};
+		63FBDF5826FE7E2900264903 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF5926FE7E2900264903 /* CloudKit.framework */,
+				63FBDF8A2702636800264903 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63FBDF5B26FE7F0A00264903 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF5C26FE7F2800264903 /* CoreDataStack.swift */,
+				63FBDF5E26FE7F4900264903 /* CoreDataUtilities.swift */,
+				63FBDF6026FE82AC00264903 /* CoreDataDistributedUpdateListener.swift */,
+				63EA6F9D27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		63FBDF6226FE871500264903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF6326FE873F00264903 /* Thing+Extras.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63FBDF6526FE926900264903 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF6626FE927C00264903 /* ThingCollectionViewCell.swift */,
+				63FBDF6826FE965100264903 /* ThingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63FBDF84270242B700264903 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF4426FE7D7600264903 /* ThingRootCollectionViewController.swift */,
+				63FBDF82270242B000264903 /* ThingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63FBDF8C2702636800264903 /* iMessageApp */ = {
+			isa = PBXGroup;
+			children = (
+				63FBDF9C2702637800264903 /* iMessageApp.entitlements */,
+				63FBDF8D2702636800264903 /* MessagesViewController.swift */,
+				63FBDF8F2702636800264903 /* MainInterface.storyboard */,
+				63FBDF922702636900264903 /* Assets.xcassets */,
+				63FBDF942702636900264903 /* Info.plist */,
+				63FBDFA32702702100264903 /* iMsgThingTableViewController.swift */,
+			);
+			path = iMessageApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63FBDF3C26FE7D7600264903 /* iCloudCoreDataStarter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FBDF5426FE7D7800264903 /* Build configuration list for PBXNativeTarget "iCloudCoreDataStarter" */;
+			buildPhases = (
+				63FBDF3926FE7D7600264903 /* Sources */,
+				63FBDF3A26FE7D7600264903 /* Frameworks */,
+				63FBDF3B26FE7D7600264903 /* Resources */,
+				63FBDF9B2702636A00264903 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63FBDF962702636A00264903 /* PBXTargetDependency */,
+			);
+			name = iCloudCoreDataStarter;
+			productName = iCloudCoreDataStarter;
+			productReference = 63FBDF3D26FE7D7600264903 /* iCloudCoreDataStarter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63FBDF882702636800264903 /* iMessageApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FBDF982702636A00264903 /* Build configuration list for PBXNativeTarget "iMessageApp" */;
+			buildPhases = (
+				63FBDF852702636800264903 /* Sources */,
+				63FBDF862702636800264903 /* Frameworks */,
+				63FBDF872702636800264903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMessageApp;
+			productName = iMessageApp;
+			productReference = 63FBDF892702636800264903 /* iMessageApp.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63FBDF3526FE7D7600264903 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					63FBDF3C26FE7D7600264903 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					63FBDF882702636800264903 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 63FBDF3826FE7D7600264903 /* Build configuration list for PBXProject "iCloudCoreDataStarter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63FBDF3426FE7D7600264903;
+			productRefGroup = 63FBDF3E26FE7D7600264903 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63FBDF3C26FE7D7600264903 /* iCloudCoreDataStarter */,
+				63FBDF882702636800264903 /* iMessageApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63FBDF3B26FE7D7600264903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FBDF5026FE7D7800264903 /* LaunchScreen.storyboard in Resources */,
+				63FBDF4D26FE7D7800264903 /* Assets.xcassets in Resources */,
+				63FBDF4826FE7D7600264903 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FBDF872702636800264903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FBDF932702636900264903 /* Assets.xcassets in Resources */,
+				63FBDF912702636800264903 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63FBDF3926FE7D7600264903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FBDF5D26FE7F2800264903 /* CoreDataStack.swift in Sources */,
+				63FBDF6426FE873F00264903 /* Thing+Extras.swift in Sources */,
+				63EA6F9E27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift in Sources */,
+				63FBDF4526FE7D7600264903 /* ThingRootCollectionViewController.swift in Sources */,
+				63FBDF6926FE965100264903 /* ThingView.swift in Sources */,
+				63FBDF4126FE7D7600264903 /* AppDelegate.swift in Sources */,
+				63FBDF4B26FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodeld in Sources */,
+				63FBDF4326FE7D7600264903 /* SceneDelegate.swift in Sources */,
+				63FBDF6126FE82AC00264903 /* CoreDataDistributedUpdateListener.swift in Sources */,
+				63FBDF6726FE927C00264903 /* ThingCollectionViewCell.swift in Sources */,
+				63FBDF5F26FE7F4900264903 /* CoreDataUtilities.swift in Sources */,
+				63EA6FC42703E1E3008C48D7 /* Globals.swift in Sources */,
+				63FBDF83270242B000264903 /* ThingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63FBDF852702636800264903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FBDF8E2702636800264903 /* MessagesViewController.swift in Sources */,
+				63FBDFA02702640300264903 /* CoreDataDistributedUpdateListener.swift in Sources */,
+				63FBDFA22702640D00264903 /* iCloudCoreDataStarter.xcdatamodeld in Sources */,
+				63FBDFA42702702100264903 /* iMsgThingTableViewController.swift in Sources */,
+				63FBDF9E2702640300264903 /* CoreDataStack.swift in Sources */,
+				63FBDFA12702640700264903 /* Thing+Extras.swift in Sources */,
+				63FBDF9F2702640300264903 /* CoreDataUtilities.swift in Sources */,
+				63EA6FC52703E1E3008C48D7 /* Globals.swift in Sources */,
+				63EA6F9F27039DC0008C48D7 /* CoreDataDiffableFetchedResultsHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63FBDF962702636A00264903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63FBDF882702636800264903 /* iMessageApp */;
+			targetProxy = 63FBDF952702636A00264903 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63FBDF4626FE7D7600264903 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FBDF4726FE7D7600264903 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63FBDF4E26FE7D7800264903 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FBDF4F26FE7D7800264903 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		63FBDF8F2702636800264903 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FBDF902702636800264903 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63FBDF5226FE7D7800264903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63FBDF5326FE7D7800264903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63FBDF5526FE7D7800264903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCloudCoreDataStarter/iCloudCoreDataStarter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = iCloudCoreDataStarter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iCloudCoreDataStarter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63FBDF5626FE7D7800264903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCloudCoreDataStarter/iCloudCoreDataStarter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = iCloudCoreDataStarter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iCloudCoreDataStarter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63FBDF992702636A00264903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = iMessageApp/iMessageApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = iMessageApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iCloudCoreDataStarter.iMessageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63FBDF9A2702636A00264903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = iMessageApp/iMessageApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = iMessageApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iCloudCoreDataStarter.iMessageApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63FBDF3826FE7D7600264903 /* Build configuration list for PBXProject "iCloudCoreDataStarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FBDF5226FE7D7800264903 /* Debug */,
+				63FBDF5326FE7D7800264903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63FBDF5426FE7D7800264903 /* Build configuration list for PBXNativeTarget "iCloudCoreDataStarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FBDF5526FE7D7800264903 /* Debug */,
+				63FBDF5626FE7D7800264903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63FBDF982702636A00264903 /* Build configuration list for PBXNativeTarget "iMessageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FBDF992702636A00264903 /* Debug */,
+				63FBDF9A2702636A00264903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63FBDF4926FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63FBDF4A26FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodel */,
+			);
+			currentVersion = 63FBDF4A26FE7D7600264903 /* iCloudCoreDataStarter.xcdatamodel */;
+			path = iCloudCoreDataStarter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63FBDF3526FE7D7600264903 /* Project object */;
+}

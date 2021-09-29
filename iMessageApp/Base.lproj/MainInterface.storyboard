@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="iMessageApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tj-ul-Oqa">
+                                <rect key="frame" x="118.5" y="49" width="83" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="8wh-IJ-8dv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Ofb-cZ-cyk"/>
+                                </constraints>
+                                <state key="normal" title="Add a Thing"/>
+                                <connections>
+                                    <action selector="_didTapAddAThingButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="dca-5Y-Qgi"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqf-vp-VeM">
+                                <rect key="frame" x="0.0" y="101" width="320" height="427"/>
+                                <connections>
+                                    <segue destination="Sme-Ay-RE2" kind="embed" id="jVr-Da-Dyy"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gqf-vp-VeM" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" id="1UG-sQ-DRb"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="trailing" secondItem="gqf-vp-VeM" secondAttribute="trailing" id="2Ec-cl-Yjz"/>
+                            <constraint firstItem="6Tj-ul-Oqa" firstAttribute="centerX" secondItem="LDy-ih-0nr" secondAttribute="centerX" id="KGL-tz-owG"/>
+                            <constraint firstItem="gqf-vp-VeM" firstAttribute="top" secondItem="6Tj-ul-Oqa" secondAttribute="bottom" constant="8" symbolic="YES" id="QW8-vr-J6e"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="bottom" secondItem="gqf-vp-VeM" secondAttribute="bottom" id="Qhx-ZW-fi6"/>
+                            <constraint firstItem="6Tj-ul-Oqa" firstAttribute="top" secondItem="LDy-ih-0nr" secondAttribute="top" constant="5" id="jBD-it-JKC"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="110.49107142857143"/>
+        </scene>
+        <!--Msg Thing Table View Controller-->
+        <scene sceneID="Sgl-Vx-Jqt">
+            <objects>
+                <tableViewController id="Sme-Ay-RE2" customClass="iMsgThingTableViewController" customModule="iMessageApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Xn-H2-1Sb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Sme-Ay-RE2" id="LYD-AB-t85"/>
+                            <outlet property="delegate" destination="Sme-Ay-RE2" id="sC5-E5-ua5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="TAc-3m-pYc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9MG-YN-si7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
