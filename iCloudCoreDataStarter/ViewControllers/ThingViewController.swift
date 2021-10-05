@@ -98,7 +98,6 @@ class ThingViewController: UIViewController {
 
         let thingPrimitive = ThingPrimitive(amount: Int64(self.amountSlider.value), color: self.colorWell.selectedColor, thing: self.thing)
         let _ = Thing.upsertThingFromPrimitive(thingPrimitive)
-        CoreDataStack.shared.saveContext()
         self.dismiss(animated: true, completion: nil)
     }
 
