@@ -41,7 +41,7 @@ accomplish the following features:
 - [X] Object deletion
 - [X] Object updating
 - [X] Collection View multi-selection toggling
-- [X] Collection View drag-and-drop redording of objects
+- [X] Collection View drag-and-drop reordering of objects
 - [X] Syncing Core Data state between app and extensions (in real time)
 - [X] iCloud syncing of Core Data between devices
 - [X] Core Data value transformers
@@ -67,7 +67,7 @@ your dev team about this topic, please contact:
 
 ### SDK Requirements
 
-This project uses only APIs availble in **iOS 14 and earlier**
+This project uses only APIs available in **iOS 14 and earlier**
 (i.e. there are _no_ iOS 15 APIs present in this project).
 
 ### Using this project
@@ -258,7 +258,7 @@ Data framework which makes this function necessary.
 
 When an `NSManagedObject` is created and added to its
 `NSManagedObjectContext`, _but (crucially) before `.save()` is called
-on the manged object context,_ the new managed object will have a
+on the managed object context,_ the new managed object will have a
 _temporary_ objectID (which can be checked with
 `managedObject.objectID.isTemporaryID`).
 
@@ -362,7 +362,7 @@ various features in a UICollectionViewController:
 - [X] A `var fetchedResultController: NSFetchedResultsController<Thing>` to retrieve the Thing objects to display
 - [X] A `UICollectionViewDiffableDataSource` to drive the collectionView's data
 - [X] A `CoreDataDiffableFetchedResultsHandler` to deal with fetchedResultsController delegate updates
-- [X] Drag and Drop re-ordering of Thing objects and the releated bookkeeping
+- [X] Drag and Drop re-ordering of Thing objects and the related bookkeeping
 - [X] Long-press context menu generation for collectionView cells
 - [X] An example of how to handle toggling `.allowsMultipleSelection` for selecting and manipulating multiple cells
 
